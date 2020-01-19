@@ -6,15 +6,14 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utils.SeleniumUtil;
 
-public class HomePage extends TestBase {
-    public HomePage(){
+public class CarsShopping extends TestBase {
+    public CarsShopping(){
         PageFactory.initElements(driver,this);
     }
-    @FindBy(xpath = "(//a[text()='Cars for Sale'])[2]")
-    public WebElement Cars_for_Sale;
+    @FindBy(xpath = "(//a[text()='Research'])[2]")
+    public WebElement Research;
 
     public void click(){
-        SeleniumUtil.click(Cars_for_Sale);
+        SeleniumUtil.click(Research);
     }
-
 }
