@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 import pages.CarsShopping;
 import pages.HomePage;
 
-public class CarsShoppingTest extends TestBase {
+public class UsedCarsTest extends TestBase {
     HomePage homePage;
     CarsShopping employeeDashboard;
 
@@ -28,5 +28,6 @@ public class CarsShoppingTest extends TestBase {
     public void verifyTitle(){
         homePage.click();
         Assert.assertEquals(driver.getTitle(),"Used Cars for Sale Online Near Me | Cars.com");
+
     }
 }

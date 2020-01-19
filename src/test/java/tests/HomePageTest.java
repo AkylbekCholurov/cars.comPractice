@@ -27,8 +27,10 @@ public class HomePageTest extends TestBase {
     @Test
     public void verifyTitle(){
         homePage.click();
-        Assert.assertEquals(driver.getTitle(),"New Cars,User Cars,Car Dealers,Price & Reviews|Cars.com");
+        Assert.assertEquals(driver.getTitle(),"Used Cars for Sale Online Near Me | Cars.com");
+        //Assert.assertEquals(driver.getTitle(),);
     }
+
 //    @Test
 //    public void testLogInBtn(){
 //        SeleniumUtil.click(homePage.logIn_Btn);

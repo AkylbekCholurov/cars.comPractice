@@ -8,25 +8,28 @@ import org.testng.annotations.Test;
 import pages.CarsShopping;
 import pages.HomePage;
 
-public class CarsShoppingTest extends TestBase {
+public class carsSUVTest extends TestBase {
+
     HomePage homePage;
     CarsShopping employeeDashboard;
 
     @BeforeMethod
-    public void setUp(){
+    public void setUp() {
         initializer();
         homePage = new HomePage();
         employeeDashboard = new CarsShopping();
 
     }
-    @AfterMethod
-    public void tearDown(){
-        driver.quit();
-    }
+
+//    @AfterMethod
+//    public void tearDown() {
+//        driver.quit();
+//    }
 
     @Test
-    public void verifyTitle(){
+    public void verifyTitle() {
         homePage.click();
-        Assert.assertEquals(driver.getTitle(),"Used Cars for Sale Online Near Me | Cars.com");
+        Assert.assertEquals(driver.getTitle(), "Used Cars for Sale Online Near Me | Cars.com");
+        //Assert.assertEquals(driver.getTitle(),);
     }
 }
